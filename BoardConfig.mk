@@ -72,6 +72,12 @@ TARGET_BOOTLOADER_BOARD_NAME := mt6753
 # Legacy blobs
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
+# Stock battery led configs
+RED_LED_PATH := "/sys/class/leds/led:rgb_red/brightness"
+GREEN_LED_PATH := "/sys/class/leds/led:rgb_green/brightness"
+BLUE_LED_PATH := "/sys/class/leds/led:rgb_blue/brightness"
+BLINK_PATH := "/sys/class/leds/led:rgb_red/blink"
+
 # Images
 TARGET_NO_BOOTLOADER := true
 
